@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="11" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="40312" started-at="2020-03-11T20:54:51 EET" finished-at="2020-03-11T20:55:32 EET">
+    <groups>
+    </groups>
+    <test name="All" duration-ms="40312" started-at="2020-03-11T20:54:51 EET" finished-at="2020-03-11T20:55:32 EET">
+      <class name="test.ContactUsTest">
+        <test-method status="PASS" signature="testContactUs()[pri:1, instance:test.ContactUsTest@23faf8f2]" name="testContactUs" duration-ms="5868" started-at="2020-03-11T20:55:21 EET" finished-at="2020-03-11T20:55:27 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUs -->
+      </class> <!-- test.ContactUsTest -->
+      <class name="test.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.HomePageTest@51cdd8a]" name="setup" is-config="true" duration-ms="19767" started-at="2020-03-11T20:54:51 EET" finished-at="2020-03-11T20:55:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkHomePageItemsCount()[pri:1, instance:test.HomePageTest@51cdd8a]" name="checkHomePageItemsCount" duration-ms="349" started-at="2020-03-11T20:55:11 EET" finished-at="2020-03-11T20:55:12 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHomePageItemsCount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.HomePageTest@51cdd8a]" name="tearDown" is-config="true" duration-ms="1720" started-at="2020-03-11T20:55:30 EET" finished-at="2020-03-11T20:55:32 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.HomePageTest -->
+      <class name="test.LoginPageTest">
+        <test-method status="PASS" signature="testLoginMissingPassword()[pri:1, instance:test.LoginPageTest@d44fc21]" name="testLoginMissingPassword" duration-ms="4776" started-at="2020-03-11T20:55:12 EET" finished-at="2020-03-11T20:55:16 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginMissingPassword -->
+        <test-method status="PASS" signature="testLoginWithIncorrectPassword()[pri:2, instance:test.LoginPageTest@d44fc21]" name="testLoginWithIncorrectPassword" duration-ms="4414" started-at="2020-03-11T20:55:16 EET" finished-at="2020-03-11T20:55:21 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithIncorrectPassword -->
+      </class> <!-- test.LoginPageTest -->
+      <class name="test.SearchTest">
+        <test-method status="PASS" signature="testCheckItemsInStock()[pri:1, instance:test.SearchTest@2d6eabae]" name="testCheckItemsInStock" duration-ms="3230" started-at="2020-03-11T20:55:27 EET" finished-at="2020-03-11T20:55:30 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckItemsInStock -->
+      </class> <!-- test.SearchTest -->
+    </test> <!-- All -->
+  </suite> <!-- Suite -->
+</testng-results>
