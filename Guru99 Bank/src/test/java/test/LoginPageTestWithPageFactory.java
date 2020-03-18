@@ -6,15 +6,15 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import PageFactory.HomePage;
+import PageFactory.LoginPage;
 import pom.BaseClass;
-import pom.HomePage;
-import pom.LoginPage;
-import pom.Util;
+import PageFactory.Util;
 
-public class LoginPageTest extends BaseClass {
+public class LoginPageTestWithPageFactory extends BaseClass {
 
-	LoginPage LP = new LoginPage();
-	HomePage HP = new HomePage();
+	LoginPage objLogin;
+	HomePage objHomePage;
 
 	@DataProvider(name = "TestLoginInvalidData")
 	public static Object[][] addInvalidDataProvider() {
@@ -23,24 +23,28 @@ public class LoginPageTest extends BaseClass {
 				{ Util.INVALID, Util.INVALID }, { Util.EMPTY, Util.EMPTY } };
 	}
 
-	@Test(dataProvider = "TestLoginInvalidData", priority = 1)
+	@Test(dataProvider = "TestLoginInvalidData", priority = 0)
 	public void testLoginWithInvalidData(String userId, String password) {
 
-		LP.login(userId, password);
-		assertEquals(LP.getAlertMessageInvalidLogin(), Util.EXPECT_ERROR_INVALID_LOGIN);
+		objLogin = new LoginPage();
+		objLogin.login(userId, password);
+		assertEquals(objLogin.getAlertMessageInvalidLogin(), Util.EXPECT_ERROR_INVALID_LOGIN);
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void testLoginWithValidData() {
 
-		LP.login(Util.VALID_USER_ID, Util.VALID_PASSWORD);
+		objLogin = new LoginPage();
+		objLogin.login(Util.VALID_USER_ID, Util.VALID_PASSWORD);
+		objHomePage = new HomePage();
 		assertEquals(Util.getTitle(), Util.EXPECT_TITLE_HOME_PAGE);
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void testIdPatternAfterLogin() {
 
-		String dynamicId = HP.getIdPattern();
+		objHomePage = new HomePage();
+		String dynamicId = objHomePage.getIdPattern();
 		// Check that the dynamic id is of pattern mngrXXXX
 		// First 4 characters must be "mngr"
 		assertTrue(dynamicId.substring(1, 5).equals(Util.FIRST_PATTERN));
@@ -50,5 +54,13 @@ public class LoginPageTest extends BaseClass {
 		assertTrue(remain.matches(Util.SECOND_PATTERN));
 
 		Util.takeScreenshot("homepage");
+	}
+
+	// Verify the home page using Dashboard message
+	@Test(priority = 3)
+	public void testHomePageAppearCorrect() {
+
+		// Verify home page
+		assertTrue(objHomePage.getHomePageDashboardUserId().toLowerCase().contains("manger id : " + Util.VALID_USER_ID));
 	}
 }

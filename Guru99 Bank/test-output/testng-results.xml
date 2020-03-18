@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66388" started-at="2020-03-17T21:08:07 EET" finished-at="2020-03-17T21:09:13 EET">
+  <suite name="Default suite" duration-ms="45544" started-at="2020-03-18T14:45:10 EET" finished-at="2020-03-18T14:45:55 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66388" started-at="2020-03-17T21:08:07 EET" finished-at="2020-03-17T21:09:13 EET">
-      <class name="test.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.LoginPageTest@48503868]" name="setup" is-config="true" duration-ms="33662" started-at="2020-03-17T21:08:07 EET" finished-at="2020-03-17T21:08:41 EET">
+    <test name="Default test" duration-ms="45544" started-at="2020-03-18T14:45:10 EET" finished-at="2020-03-18T14:45:55 EET">
+      <class name="test.LoginPageTestWithPageFactory">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.LoginPageTestWithPageFactory@48503868]" name="setup" is-config="true" duration-ms="18488" started-at="2020-03-18T14:45:10 EET" finished-at="2020-03-18T14:45:28 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLoginWithInvalidData(java.lang.String, java.lang.String)[pri:1, instance:test.LoginPageTest@48503868]" name="testLoginWithInvalidData" duration-ms="2290" started-at="2020-03-17T21:08:41 EET" data-provider="TestLoginInvalidData" finished-at="2020-03-17T21:08:43 EET">
+        <test-method status="PASS" signature="testLoginWithInvalidData(java.lang.String, java.lang.String)[pri:0, instance:test.LoginPageTestWithPageFactory@48503868]" name="testLoginWithInvalidData" duration-ms="1451" started-at="2020-03-18T14:45:28 EET" data-provider="TestLoginInvalidData" finished-at="2020-03-18T14:45:30 EET">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidData -->
-        <test-method status="PASS" signature="testLoginWithInvalidData(java.lang.String, java.lang.String)[pri:1, instance:test.LoginPageTest@48503868]" name="testLoginWithInvalidData" duration-ms="2395" started-at="2020-03-17T21:08:43 EET" data-provider="TestLoginInvalidData" finished-at="2020-03-17T21:08:45 EET">
+        <test-method status="PASS" signature="testLoginWithInvalidData(java.lang.String, java.lang.String)[pri:0, instance:test.LoginPageTestWithPageFactory@48503868]" name="testLoginWithInvalidData" duration-ms="2088" started-at="2020-03-18T14:45:30 EET" data-provider="TestLoginInvalidData" finished-at="2020-03-18T14:45:32 EET">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidData -->
-        <test-method status="PASS" signature="testLoginWithInvalidData(java.lang.String, java.lang.String)[pri:1, instance:test.LoginPageTest@48503868]" name="testLoginWithInvalidData" duration-ms="3049" started-at="2020-03-17T21:08:45 EET" data-provider="TestLoginInvalidData" finished-at="2020-03-17T21:08:48 EET">
+        <test-method status="PASS" signature="testLoginWithInvalidData(java.lang.String, java.lang.String)[pri:0, instance:test.LoginPageTestWithPageFactory@48503868]" name="testLoginWithInvalidData" duration-ms="6756" started-at="2020-03-18T14:45:32 EET" data-provider="TestLoginInvalidData" finished-at="2020-03-18T14:45:39 EET">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidData -->
-        <test-method status="PASS" signature="testLoginWithInvalidData(java.lang.String, java.lang.String)[pri:1, instance:test.LoginPageTest@48503868]" name="testLoginWithInvalidData" duration-ms="3437" started-at="2020-03-17T21:08:48 EET" data-provider="TestLoginInvalidData" finished-at="2020-03-17T21:08:52 EET">
+        <test-method status="PASS" signature="testLoginWithInvalidData(java.lang.String, java.lang.String)[pri:0, instance:test.LoginPageTestWithPageFactory@48503868]" name="testLoginWithInvalidData" duration-ms="2387" started-at="2020-03-18T14:45:39 EET" data-provider="TestLoginInvalidData" finished-at="2020-03-18T14:45:41 EET">
           <params>
             <param index="0">
               <value>
@@ -75,19 +75,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidData -->
-        <test-method status="PASS" signature="testLoginWithValidData()[pri:2, instance:test.LoginPageTest@48503868]" name="testLoginWithValidData" duration-ms="17748" started-at="2020-03-17T21:08:52 EET" finished-at="2020-03-17T21:09:10 EET">
+        <test-method status="PASS" signature="testLoginWithValidData()[pri:1, instance:test.LoginPageTestWithPageFactory@48503868]" name="testLoginWithValidData" duration-ms="12834" started-at="2020-03-18T14:45:41 EET" finished-at="2020-03-18T14:45:54 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidData -->
-        <test-method status="PASS" signature="testIdPatternAfterLogin()[pri:3, instance:test.LoginPageTest@48503868]" name="testIdPatternAfterLogin" duration-ms="1323" started-at="2020-03-17T21:09:10 EET" finished-at="2020-03-17T21:09:11 EET">
+        <test-method status="PASS" signature="testIdPatternAfterLogin()[pri:2, instance:test.LoginPageTestWithPageFactory@48503868]" name="testIdPatternAfterLogin" duration-ms="945" started-at="2020-03-18T14:45:54 EET" finished-at="2020-03-18T14:45:55 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIdPatternAfterLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.LoginPageTest@48503868]" name="tearDown" is-config="true" duration-ms="2232" started-at="2020-03-17T21:09:11 EET" finished-at="2020-03-17T21:09:13 EET">
+        <test-method status="PASS" signature="testHomePageAppearCorrect()[pri:3, instance:test.LoginPageTestWithPageFactory@48503868]" name="testHomePageAppearCorrect" duration-ms="204" started-at="2020-03-18T14:45:55 EET" finished-at="2020-03-18T14:45:55 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageAppearCorrect -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.LoginPageTestWithPageFactory@48503868]" name="tearDown" is-config="true" duration-ms="200" started-at="2020-03-18T14:45:55 EET" finished-at="2020-03-18T14:45:55 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.LoginPageTest -->
+      </class> <!-- test.LoginPageTestWithPageFactory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,4 +1,4 @@
-package pom;
+package PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,15 +19,15 @@ public class BaseClass {
 		driver.get(Util.BASE_URL + "V4/");
 		driver.manage().window().maximize();
 	}
-	
+
 	public static WebDriver getWebDriver() {
-	
+
 		return driver;
 	}
-	
+
 	@AfterTest
 	public void tearDown() {
-		
+
 		driver.close();
 	}
 }
