@@ -10,7 +10,7 @@ public class MobilePage {
 	@FindBy(linkText = "MOBILE")
 	WebElement mobileMenu;
 
-	@FindBy(xpath = "//*[@id=\"top\"]/body/div[1]/div/div[2]/div/div[2]/div[1]/div[3]/div[1]/div[1]/div/select")
+	@FindBy(css = "select[title=\"Sort By\"]")
 	WebElement sortBy;
 
 	@FindBy(id = "product-price-1")
@@ -34,8 +34,8 @@ public class MobilePage {
 		new Select(sortBy).selectByVisibleText(element);
 	}
 
-	// check Sony price after sorting products by name
-	public Boolean checkListAndDetailsPriceProduct() {
+	// check Sony price in list and details pages
+	public boolean checkListAndDetailsPriceProduct() {
 
 		String price_list_page = product_price_1.getText();
 		sony_product.click();

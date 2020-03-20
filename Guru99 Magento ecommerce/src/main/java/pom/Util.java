@@ -16,7 +16,7 @@ public class Util {
 
 	public static final String EXPECT_TITLE_HOME_PAGE = "THIS IS DEMO SITE FOR   ";
 	public static final String SORT_BY_NAME = "Name";
-	public static final Boolean TRUE = true;
+	public static final boolean TRUE = true;
 
 	public static void takeScreenshot(String fileName) {
 

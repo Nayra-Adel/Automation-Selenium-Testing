@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-	@FindBy(xpath = "//*[@id=\"top\"]/body/div[1]/div/div[2]/div/div[1]/div/div/h2")
+	@FindBy(css = "div.page-title>h2")
 	WebElement titlePage;
 
 	public HomePage() {

@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.MobilePageTest">
+      <class name="test.HomePageTest">
         <methods>
-          <include name="goToHomePage"/>
-          <include name="verifyCostOfProductInListAndDetalisEqual"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="verifyAllProductsSortedByName"/>
+          <include name="verifyTitleHomePage"/>
         </methods>
-      </class> <!-- test.MobilePageTest -->
+      </class> <!-- test.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
