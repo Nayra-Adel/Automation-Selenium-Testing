@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import pom.Util;
 
@@ -13,7 +13,7 @@ public class BaseClass {
 
 	private static WebDriver driver;
 
-	@BeforeTest
+	@BeforeClass
 	public void setup() {
 
 		driver = new ChromeDriver();
@@ -27,7 +27,14 @@ public class BaseClass {
 		return driver;
 	}
 
-	@AfterTest
+	public void switchToNewWindow() {
+
+		for (String handle : driver.getWindowHandles()) {
+			driver.switchTo().window(handle);
+		}
+	}
+
+	@AfterClass
 	public void tearDown() {
 
 		driver.close();

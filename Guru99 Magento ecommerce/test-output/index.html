@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.ShoppingCartPageTest" hash-for-method="VerifyCantAddProductInCartThanAvailableInStore">VerifyCantAddProductInCartThanAvailableInStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.MobilePageTest" hash-for-method="verifyAllProductsSortedByName">verifyAllProductsSortedByName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.MobilePageTest" hash-for-method="verifyCostOfProductInListAndDetalisEqual">verifyCostOfProductInListAndDetalisEqual</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.MobilePageTest" hash-for-method="verifyCompareTwoProducts">verifyCompareTwoProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.HomePageTest" hash-for-method="verifyTitleHomePage">verifyTitleHomePage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.MobilePageTest" hash-for-method="verifyCostOfProductInListAndDetalisEqual">verifyCostOfProductInListAndDetalisEqual</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,6 +135,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">test.ShoppingCartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCantAddProductInCartThanAvailableInStore">
+                  </a> <!-- VerifyCantAddProductInCartThanAvailableInStore -->
+                  <span class="method-name">VerifyCantAddProductInCartThanAvailableInStore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">test.MobilePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -142,24 +162,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyCompareTwoProducts">
+                  </a> <!-- verifyCompareTwoProducts -->
+                  <span class="method-name">verifyCompareTwoProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyCostOfProductInListAndDetalisEqual">
                   </a> <!-- verifyCostOfProductInListAndDetalisEqual -->
                   <span class="method-name">verifyCostOfProductInListAndDetalisEqual</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTitleHomePage">
-                  </a> <!-- verifyTitleHomePage -->
-                  <span class="method-name">verifyTitleHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,8 +188,8 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.HomePageTest&quot;/&gt;
       &lt;class name=&quot;test.MobilePageTest&quot;/&gt;
+      &lt;class name=&quot;test.ShoppingCartPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -217,24 +229,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCostOfProductInListAndDetalisEqual')
+data.setCell(0, 1, 'verifyCompareTwoProducts')
 data.setCell(0, 2, 'test.MobilePageTest')
-data.setCell(0, 3, 4726);
+data.setCell(0, 3, 6641);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAllProductsSortedByName')
-data.setCell(1, 2, 'test.MobilePageTest')
-data.setCell(1, 3, 1907);
+data.setCell(1, 1, 'VerifyCantAddProductInCartThanAvailableInStore')
+data.setCell(1, 2, 'test.ShoppingCartPageTest')
+data.setCell(1, 3, 6188);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyTitleHomePage')
-data.setCell(2, 2, 'test.HomePageTest')
-data.setCell(2, 3, 215);
+data.setCell(2, 1, 'verifyCostOfProductInListAndDetalisEqual')
+data.setCell(2, 2, 'test.MobilePageTest')
+data.setCell(2, 3, 3659);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyAllProductsSortedByName')
+data.setCell(3, 2, 'test.MobilePageTest')
+data.setCell(3, 3, 3246);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -249,18 +265,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.MobilePageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -269,45 +276,58 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">test.MobilePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">init</span>
-                <span class="method-start">17513 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">verifyTitleHomePage</span>
-                <span class="method-start">17914 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.MobilePageTest</div> <!-- chronological-class-name -->
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">18153 ms</span>
+                <span class="method-start">11003 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAllProductsSortedByName</span>
-                <span class="method-start">20959 ms</span>
+                <span class="method-start">11247 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">22872 ms</span>
+                <span class="method-start">14504 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCostOfProductInListAndDetalisEqual</span>
-                <span class="method-start">23743 ms</span>
+                <span class="method-start">14507 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">18172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCompareTwoProducts</span>
+                <span class="method-start">18175 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24825 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
+              <div class="chronological-class-name">test.ShoppingCartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">25203 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">32445 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCantAddProductInCartThanAvailableInStore</span>
+                <span class="method-start">34281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28472 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">40472 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

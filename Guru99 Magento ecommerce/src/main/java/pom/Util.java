@@ -17,6 +17,9 @@ public class Util {
 	public static final String EXPECT_TITLE_HOME_PAGE = "THIS IS DEMO SITE FOR   ";
 	public static final String SORT_BY_NAME = "Name";
 	public static final boolean TRUE = true;
+	public static final String ERROR_MAX_ALLOWED_QUANTITY = "* The maximum quantity allowed for purchase is 500.";
+	public static final String SHOPPING_CART_EMPTY = "SHOPPING CART IS EMPTY";
+	public static final String COMPARE_PRODUCTS_HEADER = "COMPARE PRODUCTS";
 
 	public static void takeScreenshot(String fileName) {
 
