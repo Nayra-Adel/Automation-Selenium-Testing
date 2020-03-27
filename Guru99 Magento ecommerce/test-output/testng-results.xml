@@ -1,59 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40759" started-at="2020-03-23T16:32:55 EET" finished-at="2020-03-23T16:33:35 EET">
+  <suite name="Suite" duration-ms="372433" started-at="2020-03-25T19:33:06 EET" finished-at="2020-03-25T19:39:18 EET">
     <groups>
     </groups>
-    <test name="Test" duration-ms="40759" started-at="2020-03-23T16:32:55 EET" finished-at="2020-03-23T16:33:35 EET">
+    <test name="Test" duration-ms="372433" started-at="2020-03-25T19:33:06 EET" finished-at="2020-03-25T19:39:18 EET">
       <class name="test.ShoppingCartPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.ShoppingCartPageTest@23faf8f2]" name="setup" is-config="true" duration-ms="7241" started-at="2020-03-23T16:33:20 EET" finished-at="2020-03-23T16:33:27 EET">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.ShoppingCartPageTest@2d6eabae]" name="setup" is-config="true" duration-ms="16192" started-at="2020-03-25T19:37:46 EET" finished-at="2020-03-25T19:38:02 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="init()[pri:0, instance:test.ShoppingCartPageTest@23faf8f2]" name="init" is-config="true" duration-ms="1836" started-at="2020-03-23T16:33:27 EET" finished-at="2020-03-23T16:33:29 EET">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.ShoppingCartPageTest@2d6eabae]" name="init" is-config="true" duration-ms="3322" started-at="2020-03-25T19:38:02 EET" finished-at="2020-03-25T19:38:05 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="VerifyCantAddProductInCartThanAvailableInStore()[pri:0, instance:test.ShoppingCartPageTest@23faf8f2]" name="VerifyCantAddProductInCartThanAvailableInStore" duration-ms="6188" started-at="2020-03-23T16:33:29 EET" finished-at="2020-03-23T16:33:35 EET">
+        <test-method status="PASS" signature="VerifyCantAddProductInCartThanAvailableInStore()[pri:0, instance:test.ShoppingCartPageTest@2d6eabae]" name="VerifyCantAddProductInCartThanAvailableInStore" duration-ms="5931" started-at="2020-03-25T19:38:05 EET" finished-at="2020-03-25T19:38:11 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCantAddProductInCartThanAvailableInStore -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ShoppingCartPageTest@23faf8f2]" name="tearDown" is-config="true" duration-ms="228" started-at="2020-03-23T16:33:35 EET" finished-at="2020-03-23T16:33:35 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ShoppingCartPageTest@2d6eabae]" name="tearDown" is-config="true" duration-ms="827" started-at="2020-03-25T19:38:11 EET" finished-at="2020-03-25T19:38:12 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.ShoppingCartPageTest -->
-      <class name="test.MobilePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.MobilePageTest@d44fc21]" name="setup" is-config="true" duration-ms="10969" started-at="2020-03-23T16:32:55 EET" finished-at="2020-03-23T16:33:06 EET">
+      <class name="test.CreatAccountPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.CreatAccountPageTest@4e7dc304]" name="setup" is-config="true" duration-ms="11351" started-at="2020-03-25T19:38:12 EET" finished-at="2020-03-25T19:38:23 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="init()[pri:0, instance:test.MobilePageTest@d44fc21]" name="init" is-config="true" duration-ms="241" started-at="2020-03-23T16:33:06 EET" finished-at="2020-03-23T16:33:06 EET">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.CreatAccountPageTest@4e7dc304]" name="init" is-config="true" duration-ms="87" started-at="2020-03-25T19:38:23 EET" finished-at="2020-03-25T19:38:23 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifyAllProductsSortedByName()[pri:0, instance:test.MobilePageTest@d44fc21]" name="verifyAllProductsSortedByName" duration-ms="3246" started-at="2020-03-23T16:33:06 EET" finished-at="2020-03-23T16:33:09 EET">
+        <test-method status="PASS" signature="VerifyCreateAccountAndShareWishList()[pri:0, instance:test.CreatAccountPageTest@4e7dc304]" name="VerifyCreateAccountAndShareWishList" duration-ms="54546" started-at="2020-03-25T19:38:23 EET" finished-at="2020-03-25T19:39:18 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCreateAccountAndShareWishList -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CreatAccountPageTest@4e7dc304]" name="tearDown" is-config="true" duration-ms="172" started-at="2020-03-25T19:39:18 EET" finished-at="2020-03-25T19:39:18 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.CreatAccountPageTest -->
+      <class name="test.MobilePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.MobilePageTest@23faf8f2]" name="setup" is-config="true" duration-ms="243706" started-at="2020-03-25T19:33:06 EET" finished-at="2020-03-25T19:37:09 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="init()[pri:0, instance:test.MobilePageTest@23faf8f2]" name="init" is-config="true" duration-ms="4167" started-at="2020-03-25T19:37:10 EET" finished-at="2020-03-25T19:37:15 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifyAllProductsSortedByName()[pri:0, instance:test.MobilePageTest@23faf8f2]" name="verifyAllProductsSortedByName" duration-ms="14513" started-at="2020-03-25T19:37:15 EET" finished-at="2020-03-25T19:37:29 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllProductsSortedByName -->
-        <test-method status="PASS" signature="init()[pri:0, instance:test.MobilePageTest@d44fc21]" name="init" is-config="true" duration-ms="3" started-at="2020-03-23T16:33:09 EET" finished-at="2020-03-23T16:33:09 EET">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.MobilePageTest@23faf8f2]" name="init" is-config="true" duration-ms="2" started-at="2020-03-25T19:37:29 EET" finished-at="2020-03-25T19:37:29 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifyCostOfProductInListAndDetalisEqual()[pri:1, instance:test.MobilePageTest@d44fc21]" name="verifyCostOfProductInListAndDetalisEqual" duration-ms="3659" started-at="2020-03-23T16:33:09 EET" finished-at="2020-03-23T16:33:13 EET">
+        <test-method status="PASS" signature="verifyCostOfProductInListAndDetalisEqual()[pri:1, instance:test.MobilePageTest@23faf8f2]" name="verifyCostOfProductInListAndDetalisEqual" duration-ms="8760" started-at="2020-03-25T19:37:29 EET" finished-at="2020-03-25T19:37:38 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCostOfProductInListAndDetalisEqual -->
-        <test-method status="PASS" signature="init()[pri:0, instance:test.MobilePageTest@d44fc21]" name="init" is-config="true" duration-ms="2" started-at="2020-03-23T16:33:13 EET" finished-at="2020-03-23T16:33:13 EET">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.MobilePageTest@23faf8f2]" name="init" is-config="true" duration-ms="2" started-at="2020-03-25T19:37:38 EET" finished-at="2020-03-25T19:37:38 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifyCompareTwoProducts()[pri:2, instance:test.MobilePageTest@d44fc21]" name="verifyCompareTwoProducts" duration-ms="6641" started-at="2020-03-23T16:33:13 EET" finished-at="2020-03-23T16:33:20 EET">
+        <test-method status="PASS" signature="verifyCompareTwoProducts()[pri:2, instance:test.MobilePageTest@23faf8f2]" name="verifyCompareTwoProducts" duration-ms="7465" started-at="2020-03-25T19:37:38 EET" finished-at="2020-03-25T19:37:45 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCompareTwoProducts -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.MobilePageTest@d44fc21]" name="tearDown" is-config="true" duration-ms="378" started-at="2020-03-23T16:33:20 EET" finished-at="2020-03-23T16:33:20 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.MobilePageTest@23faf8f2]" name="tearDown" is-config="true" duration-ms="241" started-at="2020-03-25T19:37:45 EET" finished-at="2020-03-25T19:37:46 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

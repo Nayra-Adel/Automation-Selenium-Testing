@@ -26,7 +26,7 @@ public class MobilePageTest extends BaseClass {
 	public void verifyAllProductsSortedByName() {
 
 		assertEquals(objHomePage.getTitle(), Util.EXPECT_TITLE_HOME_PAGE); // Verify Home Page
-		objMobilePage.clickMobileMenu();
+		objHomePage.clickMobileMenu();
 		objMobilePage.sortMenuBySpecificElement(Util.SORT_BY_NAME);
 		// Verify items in Mobile List Page can be sorted by Name
 		Util.takeScreenshot("Mobile Products are sorted by " + Util.SORT_BY_NAME);
@@ -35,14 +35,14 @@ public class MobilePageTest extends BaseClass {
 	@Test(priority = 1)
 	public void verifyCostOfProductInListAndDetalisEqual() {
 
-		objMobilePage.clickMobileMenu();
+		objHomePage.clickMobileMenu();
 		assertEquals(objMobilePage.checkListAndDetailsPriceProduct(), Util.TRUE);
 	}
 
 	@Test(priority = 2)
 	public void verifyCompareTwoProducts() {
 
-		objMobilePage.clickMobileMenu();
+		objHomePage.clickMobileMenu();
 
 		objMobilePage.clickAddToCompareIphone();
 		String mainIphoneMobile = objMobilePage.getIphoneText();

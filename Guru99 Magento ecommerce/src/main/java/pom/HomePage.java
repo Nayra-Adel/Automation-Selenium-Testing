@@ -9,6 +9,15 @@ public class HomePage {
 	@FindBy(css = "div.page-title>h2")
 	WebElement titlePage;
 
+	@FindBy(linkText = "MOBILE")
+	WebElement btnMobileMenu;
+
+	@FindBy(linkText = "TV")
+	WebElement btnTvMenu;
+
+	@FindBy(linkText = "MY ACCOUNT")
+	WebElement btnMyAccount;
+
 	public HomePage() {
 
 		PageFactory.initElements(BaseClass.getWebDriver(), this);
@@ -17,5 +26,20 @@ public class HomePage {
 	public String getTitle() {
 
 		return titlePage.getText();
+	}
+
+	public void clickMobileMenu() {
+
+		btnMobileMenu.click();
+	}
+
+	public void clickTvMenu() {
+
+		btnTvMenu.click();
+	}
+
+	public void clickMyAccount() {
+
+		btnMyAccount.click();
 	}
 }

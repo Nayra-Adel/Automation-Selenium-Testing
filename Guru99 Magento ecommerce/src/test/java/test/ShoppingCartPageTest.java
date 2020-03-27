@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pom.BaseClass;
+import pom.HomePage;
 import pom.MobilePage;
 import pom.ShoppingCartPage;
 import pom.Util;
@@ -13,13 +14,15 @@ import pom.Util;
 public class ShoppingCartPageTest extends BaseClass {
 
 	MobilePage objMobilePage;
+	HomePage objHomePage;
 	ShoppingCartPage objShoppingCartPage;
 
 	@BeforeMethod
 	public void init() {
 
+		objHomePage = new HomePage();
 		objMobilePage = new MobilePage();
-		objMobilePage.clickMobileMenu();
+		objHomePage.clickMobileMenu();
 		objShoppingCartPage = new ShoppingCartPage();
 	}
 

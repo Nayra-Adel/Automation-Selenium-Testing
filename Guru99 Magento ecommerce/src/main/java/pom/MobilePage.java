@@ -7,9 +7,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class MobilePage {
 
-	@FindBy(linkText = "MOBILE")
-	WebElement btnMobileMenu;
-
 	@FindBy(css = "select[title=\"Sort By\"]")
 	WebElement sortBy;
 
@@ -43,11 +40,6 @@ public class MobilePage {
 	public MobilePage() {
 
 		PageFactory.initElements(BaseClass.getWebDriver(), this);
-	}
-
-	public void clickMobileMenu() {
-
-		btnMobileMenu.click();
 	}
 
 	public void sortMenuBySpecificElement(String element) {

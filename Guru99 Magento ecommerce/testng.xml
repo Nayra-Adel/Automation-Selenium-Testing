@@ -5,6 +5,7 @@
     <classes>
       <class name="test.MobilePageTest"/>
       <class name="test.ShoppingCartPageTest"/>
+      <class name="test.CreatAccountPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
